@@ -3,10 +3,29 @@
         <title>Welcome!</title>
     </head>
     <body>
-        <h1>Hello world!</h1>
-        <p>We can build a full webpage here</p>
-        <form>
-            <input type="text" name="nickname" placeholder="Enter your nickname"/>
+        <h1>Which F.R.I.E.N.D.S. character are you?</h1>
+        <h2>Take this quiz to find out!</h2>
+        <form method="post" action="/getCharacter">
+            <label for="personality">How would your friends describe you?</label>
+                <select name="personality" id="personality">
+                <option value="sarcastic">Sarcastic</option> <!--chandler-->
+                <option value="funny">Funny</option><!--joey-->
+                <option value="serious">Serious</option><!--monica-->
+                <option value="airhead">Airhead</option><!--rachel-->
+                <option value="kind">Kind</option><!--ross-->
+                <option value="imagine">Imaginative</option><!--phoebe-->
+                </select>
+                <br><br>
+            <label for="job">What is your dream job?</label>
+                <select name="job" id="job">
+                <option value="actor">Actor</option><!--joey-->
+                <option value="chef">Chef</option><!--monica-->
+                <option value="midlife">Midlife Crisis</option><!--chandler-->
+                <option value="professor">Professor</option><!--ross-->
+                <option value="fashion">Fashion</option><!--rachel-->
+                <option value="music">Musician</option><!--phoebe-->
+                </select>
+            <br><br>
             <input type="submit" value="Submit"/>
         </form>
     </body>
